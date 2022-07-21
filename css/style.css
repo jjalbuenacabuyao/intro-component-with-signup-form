@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-red: hsl(0, 100%, 74%);
+    --primary-green: hsl(154, 59%, 51%);
+    --accent-blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --poppins: 'Poppins', sans-serif;
+    --white: #FFF;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: var(--primary-red) url('/images/bg-intro-mobile.png');
+    font-family: var(--poppins);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 2rem;
+}
+
+.itro-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    color: var(--white)
+}
+
+.intro-paragraph {
+    opacity: 0.8;
+}
+
+.try {
+    background-color: var(--accent-blue);
+    color: var(--white);
+    padding: 1rem 3rem;
+    text-align: center;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.4rem rgba(0, 0, 0, 0.2);
+    margin-top: 2.5rem;
+}
+
+.try-link {
+    font-weight: 700;
+    color: var(--white);
+}
+
+.forms-section {
+    background-color: var(--white);
+    padding: 1.5rem 1.5rem 1.6rem 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+}
+
+.claim-btn {
+    color: var(--white);
+    background-color: var(--primary-green);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.2rem 0;
+    font-weight: 600;
+}
+
+.form-paragraph {
+    font-size: 0.7rem;
+}
+
+.terms {
+    font-weight: 600;
+    color: var(--primary-red);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 6rem 7rem;
+    }
+
+    .itro-text {
+        font-size: 1.5rem;
+    }
+
+    .try {
+        padding: 1.6rem 5rem;
+    }
+
+    .main-form {
+        gap: 1.3rem;
+    }
+}
